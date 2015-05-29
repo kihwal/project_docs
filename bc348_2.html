@@ -1,0 +1,90 @@
+<html>
+ <head>
+<meta charset="UTF-8">
+</head>
+<body>
+<h2>Reparing BC-348-P Part II</h2>
+<font size=+1>
+오늘은 회사에 약간 늦게 나가게 되는 날이어서 늦잠을 자자 생각했는데, 새벽 4시에 일어나서 다시 잠을 이루지 못했습니다.  그래서 5시에는 자리를 박차고 나와 고물 연구실로 향했습니다.
+<br><br>
+OSC 발진도 두 밴드에서 안되고 수신은 한 밴드만 되므로, 일단 안테나 동조부에서 시작해서 신호를 넣고 각 단에서 출력을 오실로스코프에서 확인해보려고 계획을 세웠습니다. 가장 밑 바닥 밴드인 200kHz 밴드에서 시그널 제네레이터로 신호를 넣고 RF관 그리드로 들어가는 단자에 스코프를 물려 관찰하니 신호가 잘 보입니다. 그래서 트리머 (에어 바리콘)를 조정해보려고 이리 저리 돌리다 보니 갑자기 신호가 안나옵니다. 아악! 조심스럽게 다시 조정을 하는데, 달그락 하면서 에어 바리콘이 분리가 되며 떨어져 나갔습니다. 이런 낭패가... 손도 닿지 않는 곳이니 하는 수 없이 분해를 해야 합니다.
+<br><br>
+<br><br>
+<center>
+<img width=700 src=http://k9sul.fayoly.net/proj/bc348/bc348_09.jpg>
+<br><br>
+[안테나 동조부부터 신호를 넣으며 점검]
+</center>
+<br><br>
+이것 저것 떼어내니 분리가 됩니다. 바리콘이 분리된 이유는, 돌아가는 축에 조정부위 쪽으로부터 두꺼운 링이 끼워져 간극이 맞춰지고 그 거리가 고정이 되는 방식인데, 작은 드라이버로 조정한다고 누르면서 돌리다보니 링과 분리되어 버린 것입니다.  별로 좋은 설계가 아니라고 생각합니다. 드라이버로 조정하다보면 망가지는 바리콘. 
+<br><br>
+<br><br>
+<center>
+<img width=700 src=http://k9sul.fayoly.net/proj/bc348/bc348_10.jpg>
+<br><br>
+[분해 추출한 안테나 동조부. 그 옆에 분리된 바리콘 일부와 고정 링.]
+</center>
+<br><br>
+<br><br>
+<center>
+<img width=700 src=http://k9sul.fayoly.net/proj/bc348/bc348_11.jpg>
+<br><br>
+[각단의 서브 샤시에도 날짜가 찍혀 있다. 1943년 9월 18일]
+</center>
+<br><br>
+
+그런데 잘 살펴보니 링이 헐거워져서 바리콘이 분리되지는 않았지만 쇼트(합선)가 되어 버린 것을 발견했습니다.  밴드가 먹통이라거나 OSC가 발진 안한다는 것이 아마도 이런 이유겠다 싶었습니다. 일단 안테나 동조부에 있는 바리콘들을 풀어내어 다시 링을 조이고 간극을 조정했습니다.
+
+<br><br>
+<br><br>
+<center>
+<img width=700 src=http://k9sul.fayoly.net/proj/bc348/bc348_12.jpg>
+<br><br>
+[안테나 동조부의 합선된 바리콘]
+</center>
+<br><br>
+<br><br>
+다른 유닛들에도 마찬가지의 문제가 있을 것으로 판단되어 결국 4개 모두를 뜯었습니다. ANT, RF, DET 그리고 OSC 모듈입니다. 
+
+<br><br>
+<br><br>
+<center>
+<img width=700 src=http://k9sul.fayoly.net/proj/bc348/bc348_13.jpg>
+<br><br>
+[분리된 모듈들. 튜브가 내장된 것이 OSC. 모든 모듈에 문제가 있었다]
+</center>
+<br><br>
+<br><br>
+<center>
+<img width=700 src=http://k9sul.fayoly.net/proj/bc348/bc348_14.jpg>
+<br><br>
+[아니나 다를까 합선된 바리콘들이 사방에 보인다]
+</center>
+<br><br>
+모든 모듈을 하나 하나 점검하고 바리콘들을 손을 본 후, 가장 중요하다고 볼 수 있는 OSC만 먼저 조립하여 동작 실험을 했습니다. 모든 밴드에서 정상적으로 발진!  스코프와 주파수 카운터를 동시에 물려 보고 있었는데, 이 참에 각 밴드의 발진 주파수를 다이얼에 대충 맞게 조정하였습니다.
+<br><br>
+<br><br>
+<center>
+<img width=700 src=http://k9sul.fayoly.net/proj/bc348/bc348_15.jpg>
+<br><br>
+[OSC부만 미리 조립 장착. 불이 들어온 램프는 991관으로, 소전류 네온 정전압관 약 65V]
+</center>
+<br><br>
+<center>
+<img width=700 src=http://k9sul.fayoly.net/proj/bc348/bc348_16.jpg>
+<br><br>
+[모든 밴드에서 정상 발진]
+</center>
+<br><br>
+<br><br>
+
+OSC 모듈의 정상 작동을 확인한 후 나머지 세개의 모듈을 다시 조립해 넣었고, 시그널 제네레이터로 수신이 안되던 밴드들을 점검해봤습니다. 모두 수신이 됩니다! 야호~~~  각 밴드마다 각 모듈의 조정을 마치고 햄밴드들을 수신해보니 감도도 좋고 xtal filter도 나쁘지 않습니다. 오디오의 음량도 풍부하고요.  BFO도 xtal 필터에 맞게 다시 얼라인했습니다.
+<br><br>
+이제 AGC 불량이 마지막 하나 남은 문제인데, 일단 수신이 되니 그건 문제로 생각도 안되네요 hihi.
+<br><br><br>
+다음은 재조립 후 작동 비디오입니다.
+<br><br>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/6_Pg409Mp_8" frameborder="0" allowfullscreen></iframe>
+</font>
+</body>
+</html>
